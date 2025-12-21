@@ -4,311 +4,282 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Avion — Furniture</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-  
-  <header>
-   
-    <div>
-      <a href="#" aria-label="Поиск">
-        <img src="assets/icons/Search.png" alt="Поиск">
+  <header class="header">
+    <div class="header__top container">
+      <a class="icon-link" href="#" aria-label="Поиск">
+        <img class="icon-link__img" src="assets/icons/Search.png" alt="Поиск">
       </a>
 
-      <a href="#" aria-label="Avion на главную">
-        <img src="assets/img/Лого.png" alt="Avion">
+      <a class="header__logo" href="#" aria-label="Avion на главную">
+        <img class="header__logo-img" src="assets/img/logo.png" alt="Avion">
       </a>
 
-      <div>
-        <a href="#" aria-label="Корзина">
-          <img src="assets/icons/Shopping--cart.png" alt="Корзина">
+      <div class="header__actions">
+        <a class="icon-link" href="#" aria-label="Корзина">
+          <img class="icon-link__img" src="assets/icons/Shopping--cart.png" alt="Корзина">
         </a>
-        <a href="#" aria-label="Профиль">
-          <img src="assets/icons/User--avatar.png" alt="Профиль">
+        <a class="icon-link" href="#" aria-label="Профиль">
+          <img class="icon-link__img" src="assets/icons/User--avatar.png" alt="Профиль">
         </a>
       </div>
     </div>
 
-    <hr>
+    <nav class="nav container" aria-label="Навигация по странице">
+      <ul class="nav__list">
+        <li class="nav__item"><a class="nav__link" href="#hero">Home</a></li>
+        <li class="nav__item"><a class="nav__link" href="#features">Features</a></li>
+        <li class="nav__item"><a class="nav__link" href="#new">New ceramics</a></li>
+        <li class="nav__item"><a class="nav__link" href="#popular">Popular</a></li>
+        <li class="nav__item"><a class="nav__link" href="#newsletter">Newsletter</a></li>
+        <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+      </ul>
+    </nav>
 
- 
-    <nav aria-label="Категории">
-      <ul>
-        <li><a href="#">Plant pots</a></li>
-        <li><a href="#">Ceramics</a></li>
-        <li><a href="#">Tables</a></li>
-        <li><a href="#">Chairs</a></li>
-        <li><a href="#">Crockery</a></li>
-        <li><a href="#">Tableware</a></li>
-        <li><a href="#">Cutlery</a></li>
+    <nav class="categories container" aria-label="Категории">
+      <ul class="categories__list">
+        <li class="categories__item"><a class="categories__link" href="#">Plant pots</a></li>
+        <li class="categories__item"><a class="categories__link" href="#">Ceramics</a></li>
+        <li class="categories__item"><a class="categories__link" href="#">Tables</a></li>
+        <li class="categories__item"><a class="categories__link" href="#">Chairs</a></li>
+        <li class="categories__item"><a class="categories__link" href="#">Crockery</a></li>
+        <li class="categories__item"><a class="categories__link" href="#">Tableware</a></li>
+        <li class="categories__item"><a class="categories__link" href="#">Cutlery</a></li>
       </ul>
     </nav>
   </header>
 
- 
-  <main>
+  <main class="main">
 
- 
-    <section aria-label="Главный баннер">
-      <article>
-        <h1>The furniture brand for the future, with timeless designs</h1>
+    <section class="hero" id="hero" aria-label="Главный баннер">
+      <div class="hero__content container">
+        <div class="hero__left">
+          <h1 class="hero__title">The furniture brand for the future, with timeless designs</h1>
 
-        <p>
-          <a href="#">View collection</a>
-        </p>
+          <a class="button button--secondary" href="#new">View collection</a>
 
-        <p>
-          A new era in eco friendly furniture with Avion, the French luxury retail brand
-          with nice fonts, tasteful colors and a beautiful way to display things digitally
-          using modern web technologies.
-        </p>
-      </article>
+          <p class="hero__text">
+            A new era in eco-friendly furniture with Avion, the French luxury retail brand
+            with nice fonts, tasteful colors and a beautiful way to display things digitally
+            using modern web technologies.
+          </p>
+        </div>
 
-      <figure>
-        <img src="assets/img/Right Image.png" alt="Стул на фоне">
-      </figure>
-    </section>
-
-    <hr>
-
-
-    <section aria-label="Преимущества">
-      <h2>What makes our brand different</h2>
-
-      <ul>
-        <li>
-          <article>
-            <img src="assets/icons/Delivery.png" alt="Доставка">
-            <h3>Next day as standard</h3>
-            <p>Order before 3pm and get your order the next day as standard</p>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <img src="assets/icons/Checkmark--outline.png" alt="Качество">
-            <h3>Made by true artisans</h3>
-            <p>Handmade crafted goods made with real passion and craftsmanship</p>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <img src="assets/icons/Purchase.png" alt="Цены">
-            <h3>Unbeatable prices</h3>
-            <p>For our materials and quality you won’t find better prices anywhere</p>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <img src="assets/icons/Sprout.png" alt="Экологичность">
-            <h3>Recycled packaging</h3>
-            <p>We use 100% recycled packaging to ensure our footprint is manageable</p>
-          </article>
-        </li>
-      </ul>
-    </section>
-
-    <hr>
-
- 
-    <section aria-label="New ceramics">
-      <header>
-        <h2>New ceramics</h2>
-      </header>
-
-      <ul>
-        <li>
-          <article>
-            <img src="assets/img/Photo.png" alt="The Dandy chair">
-            <h3>The Dandy chair</h3>
-            <p>£250</p>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <img src="assets/img/Photo (3).png" alt="Rustic Vase Set">
-            <h3>Rustic Vase Set</h3>
-            <p>£155</p>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <img src="assets/img/Photo (1).png" alt="The Silky Vase">
-            <h3>The Silky Vase</h3>
-            <p>£125</p>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <img src="assets/img/Photo (2).png" alt="The Lucy Lamp">
-            <h3>The Lucy Lamp</h3>
-            <p>£399</p>
-          </article>
-        </li>
-      </ul>
-
-      <p>
-        <a href="#">View collection</a>
-      </p>
-    </section>
-
-    <hr>
-    <section aria-label="Our popular products">
-      <header>
-        <h2>Our popular products</h2>
-      </header>
-
-      <ul>
-        <li>
-          <article>
-            <img src="assets/img/Large.png" alt="The Popular suede sofa">
-            <h3>The Popular suede sofa</h3>
-            <p>£980</p>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <img src="assets/img/Photo.png" alt="The Dandy chair">
-            <h3>The Dandy chair</h3>
-            <p>£250</p>
-          </article>
-        </li>
-
-        <li>
-          <article>
-            <img src="assets/img/Photo (3).png" alt="The Dandy chair in black and white">
-            <h3>The Dandy chair</h3>
-            <p>£250</p>
-          </article>
-        </li>
-      </ul>
-
-      <p>
-        <a href="#">View collection</a>
-      </p>
-    </section>
-
-    <hr>
-
-
-    <section aria-label="Подписка">
-      <h2>Join the club and get the benefits</h2>
-      <p>Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more</p>
-
-      <form action="#" method="post">
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" placeholder="your@email.com" required>
-        <button type="submit">Sign up</button>
-      </form>
-    </section>
-
-    <hr>
-
- 
-    <section aria-label="О компании">
-      <article>
-        <h2>From a studio in London to a global brand with over 400 outlets</h2>
-
-        <p>
-          When we started Avion, the idea was simple. Make high quality furniture affordable
-          and available for the mass market.
-        </p>
-
-        <p>
-          Handmade, and lovingly crafted furniture and homeware is what we live, breathe and
-          design so our Chelsea boutique become the hotbed for the London interior design community.
-        </p>
-
-        <p><a href="#">Get in touch</a></p>
-      </article>
-
-      <figure>
-        <img src="assets/img/Image.png" alt="Интерьер с растениями и диваном">
-      </figure>
-    </section>
-
-  </main>
-
-  <hr>
-
- 
-  <footer>
-
-    <section aria-label="Подвал: ссылки">
-      <div>
-        <h2>Menu</h2>
-        <ul>
-          <li><a href="#">New arrivals</a></li>
-          <li><a href="#">Best sellers</a></li>
-          <li><a href="#">Recently viewed</a></li>
-          <li><a href="#">Popular this week</a></li>
-          <li><a href="#">All products</a></li>
-        </ul>
+        <div class="hero__right">
+          <img class="hero__image" src="assets/img/Right Image.png" alt="Стул на фоне">
+        </div>
       </div>
+    </section>
 
-      <div>
-        <h2>Categories</h2>
-        <ul>
-          <li><a href="#">Crockery</a></li>
-          <li><a href="#">Furniture</a></li>
-          <li><a href="#">Homeware</a></li>
-          <li><a href="#">Plant pots</a></li>
-          <li><a href="#">Chairs</a></li>
-          <li><a href="#">Crockery</a></li>
-        </ul>
+    <section class="features" id="features" aria-label="Преимущества">
+      <div class="container">
+        <h2 class="section-title section-title--center">What makes our brand different</h2>
+
+        <div class="features__grid">
+          <article class="feature-card">
+            <img class="feature-card__icon" src="assets/icons/Delivery.png" alt="Доставка">
+            <h3 class="feature-card__title">Next day as standard</h3>
+            <p class="feature-card__text">Order before 3pm and get your order the next day as standard</p>
+          </article>
+
+          <article class="feature-card">
+            <img class="feature-card__icon" src="assets/icons/Checkmark--outline.png" alt="Качество">
+            <h3 class="feature-card__title">Made by true artisans</h3>
+            <p class="feature-card__text">Handmade crafted goods made with real passion and craftsmanship</p>
+          </article>
+
+          <article class="feature-card">
+            <img class="feature-card__icon" src="assets/icons/Purchase.png" alt="Цены">
+            <h3 class="feature-card__title">Unbeatable prices</h3>
+            <p class="feature-card__text">For our materials and quality you won’t find better prices anywhere</p>
+          </article>
+
+          <article class="feature-card">
+            <img class="feature-card__icon" src="assets/icons/Sprout.png" alt="Экологичность">
+            <h3 class="feature-card__title">Recycled packaging</h3>
+            <p class="feature-card__text">We use 100% recycled packaging to ensure our footprint is manageable</p>
+          </article>
+        </div>
       </div>
+    </section>
 
-      <div>
-        <h2>Our company</h2>
-        <ul>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Vacancies</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Privacy</a></li>
-          <li><a href="#">Returns policy</a></li>
-        </ul>
+    <section class="products" id="new" aria-label="New ceramics">
+      <div class="container">
+        <h2 class="section-title">New ceramics</h2>
+
+        <div class="products__grid">
+          <article class="product-card">
+            <img class="product-card__img" src="assets/img/Photo.png" alt="The Dandy chair">
+            <h3 class="product-card__title">The Dandy chair</h3>
+            <p class="product-card__price">£250</p>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__img" src="assets/img/Photo (3).png" alt="Rustic Vase Set">
+            <h3 class="product-card__title">Rustic Vase Set</h3>
+            <p class="product-card__price">£155</p>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__img" src="assets/img/Photo (1).png" alt="The Silky Vase">
+            <h3 class="product-card__title">The Silky Vase</h3>
+            <p class="product-card__price">£125</p>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__img" src="assets/img/Photo (2).png" alt="The Lucy Lamp">
+            <h3 class="product-card__title">The Lucy Lamp</h3>
+            <p class="product-card__price">£399</p>
+          </article>
+        </div>
+
+        <div class="products__actions">
+          <a class="button button--primary" href="#popular">View collection</a>
+        </div>
       </div>
+    </section>
 
-      <div>
-        <h2>Join our mailing list</h2>
-        <form action="#" method="post">
-          <label for="footer-email">Email</label>
-          <input id="footer-email" name="footer-email" type="email" placeholder="your@email.com" required>
-          <button type="submit">Sign up</button>
+    <section class="products" id="popular" aria-label="Our popular products">
+      <div class="container">
+        <h2 class="section-title">Our popular products</h2>
+
+        <div class="products__grid products__grid--popular">
+          <article class="product-card product-card--wide">
+            <img class="product-card__img" src="assets/img/Large.png" alt="The Popular suede sofa">
+            <h3 class="product-card__title">The Popular suede sofa</h3>
+            <p class="product-card__price">£980</p>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__img" src="assets/img/Photo.png" alt="The Dandy chair">
+            <h3 class="product-card__title">The Dandy chair</h3>
+            <p class="product-card__price">£250</p>
+          </article>
+
+          <article class="product-card">
+            <img class="product-card__img" src="assets/img/Photo (3).png" alt="The Dandy chair in black and white">
+            <h3 class="product-card__title">The Dandy chair</h3>
+            <p class="product-card__price">£250</p>
+          </article>
+        </div>
+
+        <div class="products__actions">
+          <a class="button button--primary" href="#newsletter">View collection</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter" aria-label="Подписка">
+      <div class="container newsletter__box">
+        <h2 class="section-title section-title--center">Join the club and get the benefits</h2>
+        <p class="newsletter__text">
+          Sign up for our newsletter and receive exclusive offers on new ranges, sales, pop up stores and more
+        </p>
+
+        <form class="newsletter__form" action="#" method="post">
+          <label class="newsletter__label" for="email">Email</label>
+          <input class="newsletter__input" id="email" name="email" type="email" placeholder="your@email.com" required>
+          <button class="button button--primary" type="submit">Sign up</button>
         </form>
       </div>
     </section>
 
-    <hr>
+    <section class="about" id="about" aria-label="О компании">
+      <div class="container about__grid">
+        <div class="about__text">
+          <h2 class="section-title">From a studio in London to a global brand with over 400 outlets</h2>
 
-    <section aria-label="Низ подвала">
-      <p>Copyright 2022 Avion LTD</p>
+          <p>
+            When we started Avion, the idea was simple. Make high quality furniture affordable
+            and available for the mass market.
+          </p>
 
-      <ul aria-label="Социальные сети">
-        <li>
-          <a href="#" aria-label="LinkedIn">
-            <img src="assets/icons/Logo--linkedin.png" alt="LinkedIn">
+          <p>
+            Handmade, and lovingly crafted furniture and homeware is what we live, breathe and
+            design so our Chelsea boutique become the hotbed for the London interior design community.
+          </p>
+
+          <a class="button button--secondary" href="#hero">Get in touch</a>
+        </div>
+
+        <div class="about__image">
+          <img class="about__img" src="assets/img/Image.png" alt="Интерьер с растениями и диваном">
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__top">
+      <div class="footer__col">
+        <h2 class="footer__title">Menu</h2>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#">New arrivals</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Best sellers</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Recently viewed</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Popular this week</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">All products</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__title">Categories</h2>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#">Crockery</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Furniture</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Homeware</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Plant pots</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Chairs</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Crockery</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__title">Our company</h2>
+        <ul class="footer__list">
+          <li class="footer__item"><a class="footer__link" href="#">About us</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Vacancies</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Contact us</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Privacy</a></li>
+          <li class="footer__item"><a class="footer__link" href="#">Returns policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h2 class="footer__title">Join our mailing list</h2>
+        <form class="footer__form" action="#" method="post">
+          <label class="footer__label" for="footer-email">Email</label>
+          <input class="footer__input" id="footer-email" name="footer-email" type="email" placeholder="your@email.com" required>
+          <button class="button button--primary" type="submit">Sign up</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p class="footer__copy">Copyright 2022 Avion LTD</p>
+
+      <ul class="social" aria-label="Социальные сети">
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="LinkedIn">
+            <img class="social__icon" src="assets/icons/Logo--linkedin.png" alt="LinkedIn">
           </a>
         </li>
-        <li>
-          <a href="#" aria-label="Pinterest">
-            <img src="assets/icons/Logo--pinterest.png" alt="Pinterest">
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Pinterest">
+            <img class="social__icon" src="assets/icons/Logo--pinterest.png" alt="Pinterest">
           </a>
         </li>
-        <li>
-          <a href="#" aria-label="Skype">
-            <img src="assets/icons/Logo--skype.png" alt="Skype">
+        <li class="social__item">
+          <a class="social__link" href="#" aria-label="Skype">
+            <img class="social__icon" src="assets/icons/Logo--skype.png" alt="Skype">
           </a>
         </li>
       </ul>
-    </section>
-
+    </div>
   </footer>
 
 </body>
