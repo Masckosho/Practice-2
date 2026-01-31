@@ -144,10 +144,12 @@ h1, h2, h3 {
 
 /* ===== FEATURES ===== */
 .features__grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
-  flex-wrap: wrap;
 }
+
+
 
 .feature-card {
   border: 1px solid #ddd;
@@ -222,4 +224,50 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+/* ====== АДАПТИВНОСТЬ (Desktop First) ====== */
+
+/* Планшеты (меньше 992px) */
+@media (max-width: 991px) {
+  .nav__list {
+    gap: 10px;
+  }
+}
+
+/* Мобильные (меньше 768px) — меню становится вертикальным */
+@media (max-width: 767px) {
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* ====== MASONRY (колонки) ====== */
+.masonry-grid__container {
+  column-count: 3;
+  column-gap: 24px;
+}
+
+.masonry-item {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+}
+
+/* Адаптив для Masonry */
+@media (max-width: 991px) {
+  .masonry-grid__container {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 767px) {
+  .masonry-grid__container {
+    column-count: 1;
+  }
 }
