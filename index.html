@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Avion — Furniture</title>
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 1024px)">
 </head>
 <body>
 
@@ -13,6 +14,14 @@
       <a class="icon-link" href="#" aria-label="Поиск">
         <img class="icon-link__img" src="assets/icons/Search.png" alt="Поиск">
       </a>
+    
+    <button class="menu-toggle" id="menuToggle"
+      aria-label="Открыть меню" aria-expanded="false">
+      <span class="menu-toggle__line"></span>
+      <span class="menu-toggle__line"></span>
+      <span class="menu-toggle__line"></span>
+    </button>
+
 
       <a class="header__logo" href="#" aria-label="Avion на главную">
         <img class="header__logo-img" src="assets/img/logo.png" alt="Avion">
@@ -28,7 +37,7 @@
       </div>
     </div>
 
-    <nav class="nav container" aria-label="Навигация по странице">
+    <nav class="nav container" id="mainNav" aria-label="Навигация по странице">
       <ul class="nav__list">
         <li class="nav__item"><a class="nav__link" href="#hero">Home</a></li>
         <li class="nav__item"><a class="nav__link" href="#features">Features</a></li>
@@ -310,6 +319,7 @@
       </ul>
     </div>
   </footer>
-
+  <button class="scroll-top" id="scrollTop" aria-label="Наверх">↑</button>
+  <script src="scripts/menu.js"></script>
 </body>
 </html>
