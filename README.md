@@ -7,4 +7,5 @@
 - HTML5
 
 ## Ссылка на опубликованный сайт
-[https://твойлогин.github.io/имя-репозитория/](https://masckosho.github.io/Practice-2/)
+[Site](https://masckosho.github.io/Practice-2/)
+
